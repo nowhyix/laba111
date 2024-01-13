@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ксметологическая клиника</title>
+</head>
+
+<body>
+<header>
+    <h1>Добро пожаловать в нашу косметологическую клинику</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>О клинике</h2>
+    <p>Мы предоставляем широкий спектр косметологических услуг для наших клиентов. Наша клиника оборудована по последнему слову техники, и наш профессиональный персонал гарантирует вам качественное обслуживание.</p>
+
+    <details>
+        <summary style="font-weight: bold;">Дополнительная информация</summary>
+        <ul style="list-style-position: inside; padding-left: 0;">
+            <li>Более 2000 клиентов каждый год</li>
+            <li>Скидки для постоянных клиентов</li>
+        </ul>
+    </details>
+</section>
+
+<section class="gallery-section">
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Фото 1">
+        <img src="photo2.jpg" alt="Фото 2">
+        <img src="photo3.jpg" alt="Фото 3">
+    </div>
+</section>
+
+<section class="video-section">
+    <div class="video-container">
+        <video width="800" height="400" controls preload="none" poster="1cl.jpg">
+            <source src="video (2).mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+
+<section class="audio-section">
+    <audio controls>
+        <source src="myzika.mp3" type="audio/mp3">
+    </audio>
+</section>
+
+
+<footer>
+    <p>&copy; 2023 Косметологическая клиника</p>
+
+    <a href="#feedbackForm" id="feedbackButton">Обратная связь</a>
+    <form id="feedbackForm" action="обработчик.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
+</footer>
+</body>
+
+</html>
